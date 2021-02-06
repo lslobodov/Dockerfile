@@ -49,6 +49,7 @@ die() {
 parse_params() {
   # default values of variables set from params
   flag=0
+  zet=4
   param=''
 
   while :; do
@@ -84,5 +85,6 @@ setup_colors
 
 msg "${RED}Read parameters:${NOFORMAT}"
 msg "- flag: ${flag}"
+msg "- zet: ${zet}"
 msg "- param: ${param}"
 msg "- arguments: ${args[*]-}"
